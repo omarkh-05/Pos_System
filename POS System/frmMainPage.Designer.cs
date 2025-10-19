@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainPage));
             this.pnlNavbar = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnCategories = new FontAwesome.Sharp.IconButton();
@@ -578,6 +579,7 @@
             this.Controls.Add(this.pnlMainPage);
             this.Controls.Add(this.pnlNavbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "frmMainPage";
             this.Text = "Main Page";
