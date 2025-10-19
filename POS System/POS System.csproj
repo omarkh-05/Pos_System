@@ -58,11 +58,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Reports\frmCategories.cs">
+    <Compile Include="Reports\frmReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\frmCategories.Designer.cs">
-      <DependentUpon>frmCategories.cs</DependentUpon>
+    <Compile Include="Reports\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControl\CustomPictureBox.cs">
       <SubType>Component</SubType>
@@ -178,6 +178,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolly1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier_search_magnifyng_glass_icon_153921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592828-general-key-key-lock-lock-office-password-security_1077591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male2_85199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\role1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

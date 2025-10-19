@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserInfo));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnl = new System.Windows.Forms.Panel();
             this.pnlUserInfoLabel = new System.Windows.Forms.Panel();
@@ -41,29 +40,22 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.customPictureBox1 = new WindowsFormsApp1.CustomPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnrefresh = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvUserInfo = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblRemove = new System.Windows.Forms.Label();
             this.SetImage = new System.Windows.Forms.Label();
-            this.pbUserimg = new FontAwesome.Sharp.IconPictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.rbActive1 = new System.Windows.Forms.RadioButton();
             this.rbActive0 = new System.Windows.Forms.RadioButton();
             this.label19 = new System.Windows.Forms.Label();
             this.cbRole = new System.Windows.Forms.ComboBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtConfirmPass = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -71,20 +63,27 @@
             this.lblSetImg = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.customPictureBox1 = new WindowsFormsApp1.CustomPictureBox();
+            this.btnrefresh = new FontAwesome.Sharp.IconButton();
+            this.pbUserimg = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl.SuspendLayout();
             this.pnlUserInfoLabel.SuspendLayout();
             this.pnlUserInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserimg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -215,15 +214,6 @@
             this.label9.TabIndex = 73;
             this.label9.Text = "Name :";
             // 
-            // customPictureBox1
-            // 
-            this.customPictureBox1.Location = new System.Drawing.Point(67, 66);
-            this.customPictureBox1.Name = "customPictureBox1";
-            this.customPictureBox1.Size = new System.Drawing.Size(190, 182);
-            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.customPictureBox1.TabIndex = 5;
-            this.customPictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnrefresh);
@@ -255,20 +245,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1114, 552);
             this.panel2.TabIndex = 1;
-            // 
-            // btnrefresh
-            // 
-            this.btnrefresh.FlatAppearance.BorderSize = 0;
-            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.btnrefresh.IconColor = System.Drawing.Color.DarkGray;
-            this.btnrefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnrefresh.Location = new System.Drawing.Point(1054, 242);
-            this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(43, 38);
-            this.btnrefresh.TabIndex = 75;
-            this.btnrefresh.UseVisualStyleBackColor = true;
-            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
             // 
             // panel1
             // 
@@ -335,23 +311,6 @@
             this.SetImage.Text = "Set Image";
             this.SetImage.Click += new System.EventHandler(this.SetImage_Click);
             // 
-            // pbUserimg
-            // 
-            this.pbUserimg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pbUserimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbUserimg.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pbUserimg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pbUserimg.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pbUserimg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbUserimg.IconSize = 63;
-            this.pbUserimg.Location = new System.Drawing.Point(920, 185);
-            this.pbUserimg.Name = "pbUserimg";
-            this.pbUserimg.Size = new System.Drawing.Size(108, 63);
-            this.pbUserimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUserimg.TabIndex = 70;
-            this.pbUserimg.TabStop = false;
-            this.pbUserimg.Click += new System.EventHandler(this.pbUserimg_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -417,17 +376,6 @@
             this.cbRole.Size = new System.Drawing.Size(258, 28);
             this.cbRole.TabIndex = 17;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(725, 128);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 29);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -452,17 +400,6 @@
             this.txtConfirmPass.Size = new System.Drawing.Size(258, 37);
             this.txtConfirmPass.TabIndex = 14;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(184, 128);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 29);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -473,17 +410,6 @@
             this.label6.Size = new System.Drawing.Size(76, 29);
             this.label6.TabIndex = 12;
             this.label6.Text = "Role :";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(725, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 29);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -508,17 +434,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(258, 37);
             this.txtPassword.TabIndex = 8;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(184, 66);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 29);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -584,6 +499,90 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // customPictureBox1
+            // 
+            this.customPictureBox1.Location = new System.Drawing.Point(67, 66);
+            this.customPictureBox1.Name = "customPictureBox1";
+            this.customPictureBox1.Size = new System.Drawing.Size(190, 182);
+            this.customPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.customPictureBox1.TabIndex = 5;
+            this.customPictureBox1.TabStop = false;
+            // 
+            // btnrefresh
+            // 
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.btnrefresh.IconColor = System.Drawing.Color.DarkGray;
+            this.btnrefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnrefresh.Location = new System.Drawing.Point(1054, 242);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(43, 38);
+            this.btnrefresh.TabIndex = 75;
+            this.btnrefresh.UseVisualStyleBackColor = true;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
+            // pbUserimg
+            // 
+            this.pbUserimg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pbUserimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbUserimg.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pbUserimg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pbUserimg.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pbUserimg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbUserimg.IconSize = 63;
+            this.pbUserimg.Location = new System.Drawing.Point(920, 185);
+            this.pbUserimg.Name = "pbUserimg";
+            this.pbUserimg.Size = new System.Drawing.Size(108, 63);
+            this.pbUserimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUserimg.TabIndex = 70;
+            this.pbUserimg.TabStop = false;
+            this.pbUserimg.Click += new System.EventHandler(this.pbUserimg_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources._3592828_general_key_key_lock_lock_office_password_security_107759;
+            this.pictureBox4.Location = new System.Drawing.Point(725, 128);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.role1;
+            this.pictureBox3.Location = new System.Drawing.Point(184, 128);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._3592828_general_key_key_lock_lock_office_password_security_107759;
+            this.pictureBox1.Location = new System.Drawing.Point(725, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.male2_85199;
+            this.pictureBox2.Location = new System.Drawing.Point(184, 66);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmUserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -601,17 +600,17 @@
             this.pnlUserInfoLabel.PerformLayout();
             this.pnlUserInfo.ResumeLayout(false);
             this.pnlUserInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserimg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
