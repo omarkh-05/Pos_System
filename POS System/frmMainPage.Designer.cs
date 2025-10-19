@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainPage));
             this.pnlNavbar = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnCategories = new FontAwesome.Sharp.IconButton();
@@ -57,12 +56,12 @@
             this.pnlCategories = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlPosPoint = new System.Windows.Forms.Panel();
             this.pnlSales = new System.Windows.Forms.Panel();
+            this.salesInvoise1 = new WindowsFormsApp1.SalesInvoise();
             this.pnlMoreSales = new System.Windows.Forms.Panel();
             this.lblOpenedSalesInvoice = new System.Windows.Forms.Label();
             this.btnAddNewSales = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlMainPage = new System.Windows.Forms.Panel();
-            this.salesInvoise1 = new WindowsFormsApp1.SalesInvoise();
             this.pnlNavbar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.pnlProducts.SuspendLayout();
@@ -435,7 +434,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.magnifier_search_magnifyng_glass_icon_153921;
             this.pictureBox2.Location = new System.Drawing.Point(15, 31);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 45);
@@ -499,6 +498,14 @@
             this.pnlSales.Size = new System.Drawing.Size(410, 948);
             this.pnlSales.TabIndex = 1;
             // 
+            // salesInvoise1
+            // 
+            this.salesInvoise1.BackColor = System.Drawing.Color.Transparent;
+            this.salesInvoise1.Location = new System.Drawing.Point(0, 0);
+            this.salesInvoise1.Name = "salesInvoise1";
+            this.salesInvoise1.Size = new System.Drawing.Size(410, 936);
+            this.salesInvoise1.TabIndex = 0;
+            // 
             // pnlMoreSales
             // 
             this.pnlMoreSales.Controls.Add(this.lblOpenedSalesInvoice);
@@ -561,14 +568,6 @@
             this.pnlMainPage.Name = "pnlMainPage";
             this.pnlMainPage.Size = new System.Drawing.Size(1800, 1030);
             this.pnlMainPage.TabIndex = 2;
-            // 
-            // salesInvoise1
-            // 
-            this.salesInvoise1.BackColor = System.Drawing.Color.Transparent;
-            this.salesInvoise1.Location = new System.Drawing.Point(0, 0);
-            this.salesInvoise1.Name = "salesInvoise1";
-            this.salesInvoise1.Size = new System.Drawing.Size(410, 936);
-            this.salesInvoise1.TabIndex = 0;
             // 
             // frmMainPage
             // 

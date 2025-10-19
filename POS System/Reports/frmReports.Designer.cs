@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1.Categories
 {
-    partial class frmCategories
+    partial class frmReports
     {
         /// <summary>
         /// Required designer variable.

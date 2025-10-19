@@ -420,7 +420,7 @@ namespace WindowsFormsApp1
             MessageBox.Show("Coming Soon");
             return;
 
-            frmCategories frmCategories = new frmCategories();
+            frmReports frmCategories = new frmReports();
             if (CheckIfFormOpen(frmCategories))
             {
                 return;
